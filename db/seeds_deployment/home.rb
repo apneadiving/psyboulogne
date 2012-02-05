@@ -66,3 +66,4 @@ home_page.parts.create({
 
 fichier = Resource.create(:file => File.open("#{Rails.root}/db/seeds_deployment/CVCapucineChastel.pdf"))
 
+RefinerySetting.create(:name => "titre_universitaire", :value => "Diplômée d'un Master 1 en psychopathologie de l'université Paris X", :form_value_type => "text_area")

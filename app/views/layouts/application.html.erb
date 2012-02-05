@@ -23,7 +23,7 @@
           <li class="cv"><a href="<%= Resource.first.url %>" title="Téléchargez le cv de Capucine Chastel">Téléchargez le cv de Capucine Chastel</a></li>
         </ul>
       </nav>
-      <h1>Diplômée d'un Master 1 en psychopathologie de l'université Paris X</h1>
+      <h1><%= RefinerySetting.get(:titre_universitaire) %></h1>
     </header>
     
     <%= yield %>
