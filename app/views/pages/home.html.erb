@@ -1,0 +1,41 @@
+<section id="content">
+  <article>
+    <%=raw @page.content_for(:body) %>
+  </article>
+  <aside>
+    <%=raw @page.content_for(:side_body) %>
+  </aside>
+</section>
+<div class="clear"></div>
+<section id="contact">
+  <section class="infos">
+    <%=raw @page.content_for(:formulaire) %>
+    <div class="form">
+        <!-- <span class="notification-red">
+        Error lorem ipsum...
+        </span>
+        <span class="notification-green">
+        Error lorem ipsum... Error lorem ipsum... Error lorem ipsum... Error lorem ipsum... Err
+        or lo rem ipsum... Error lorem ipsum... 
+        </span>-->
+      <div class="clear"></div>
+      <form action="#" method="post">
+        <p class="marron">Vous pouvez me contacter par mail directement ici :</p>    
+        <label>Email*</label>
+        <div>
+          <input type="text"/>
+        </div>
+        <label>Message*</label>
+        <div>
+          <textarea cols="62" rows="10"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Envoyer le message"/>
+        </div>
+      </form>   
+    </div>
+  </section>
+  <section class="map">
+    <iframe width="400" height="280" frameborder="0" src="http://maps.google.fr/maps?hl=fr&amp;q=30+TER+rue+de+l%E2%80%99ancienne+mairie+-+92100+Boulogne-Billancourt&amp;ie=UTF8&amp;hq=&amp;hnear=30+Rue+de+l'Ancienne+Mairie,+92100+Boulogne-Billancourt,+Hauts-de-Seine,+%C3%8Ele-de-France&amp;t=m&amp;ll=48.846,2.233915&amp;spn=0.015818,0.034246&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>        
+  </section>
+</section>

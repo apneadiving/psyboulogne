@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<head>
+  <meta charset="UTF-8">
+  <title>Capucine Chastel, Psycho-practicienne &amp; coach psychologique à Boulogne Billancourt</title>
+  <meta name="description" content="Capucine Chastel, Psycho-practicienne &amp; coach psychologique à Boulogne Billancourt">
+  <meta name="geo.placename" content="Boulogne Billancourt, Ile-de-france, France">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>   
+  <%= stylesheet_link_tag "application" %>
+  <!-- <script src="js/html5-ie.js"></script> -->
+</head>
+
+<body>
+  <section id="page">
+    <header>
+      <figure>
+        <img src="/images/logo.gif" alt="Logotype Capucine Chastel"/>
+      </figure>
+      <nav>
+        <ul>
+          <li class="mail"><a href="mailto:capucinechastet@psyboulognebillancourt.com" title="Contactez Capucine Chastel par email">Contactez Capucine Chastel par email</a></li>
+          <li class="facebook"><a href="http://fr-fr.facebook.com/pages/Capucine-CHASTEL-PSYCHOPRATICIENNE-Coach-PSYCHOLOGIQUE/294523413910852?sk=info" title="Visitez la page Facebook de Capucine Chastel">Visitez la page Facebook de Capucine Chastel</a></li>
+          <li class="cv"><a href="<%= Resource.first.url %>" title="Téléchargez le cv de Capucine Chastel">Téléchargez le cv de Capucine Chastel</a></li>
+        </ul>
+      </nav>
+      <h1>Diplômée d'un Master1 en psychopathologie de l'université Paris X</h1>
+    </header>
+    
+    <%= yield %>
+    
+  </section>
+  <div class="clear"></div>
+  <footer>
+    <div>
+      <p class="marron">Copyright 2012 - PsyBoulogne © - Tous droits réservés</p>
+      <a href="#" title="Accès à l'interface de gestion">Accès à l'interface de gestion</a>
+    </div>
+  </footer>
+</body>
+</html>
