@@ -11,28 +11,31 @@
   <section class="infos">
     <%=raw @page.content_for(:formulaire) %>
     <div class="form">
-        <!-- <span class="notification-red">
-        Error lorem ipsum...
-        </span>
-        <span class="notification-green">
-        Error lorem ipsum... Error lorem ipsum... Error lorem ipsum... Error lorem ipsum... Err
-        or lo rem ipsum... Error lorem ipsum... 
-        </span>-->
+      <% unless flash[:notice].nil? %>
+      <span class="notification-green">
+      <%= flash[:notice] %>
+      </span>
+      <% end %>
+      <% unless flash[:error].nil? %>
+      <span class="notification-red">
+      <%=raw flash[:error] %>
+      </span>
+      <% end %>
       <div class="clear"></div>
-      <form action="#" method="post">
+      <%= form_for Inquiry.new do |f| %>
         <p class="marron">Vous pouvez me contacter par mail directement ici :</p>    
         <label>Email*</label>
         <div>
-          <input type="text"/>
+          <%= f.text_field :email, :value => flash[:email] %>
         </div>
         <label>Message*</label>
         <div>
-          <textarea cols="62" rows="10"></textarea>
+          <%= f.text_area :message, :rows => 10, :cols => 62, :value => flash[:message] %>
         </div>
         <div>
-          <input type="submit" value="Envoyer le message"/>
+          <%= f.submit "Envoyer le message" %>
         </div>
-      </form>   
+      <% end %>
     </div>
   </section>
   <section class="map">

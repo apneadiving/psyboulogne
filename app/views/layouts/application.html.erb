@@ -6,6 +6,7 @@
   <meta name="geo.placename" content="Boulogne Billancourt, Ile-de-france, France">
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>   
   <%= stylesheet_link_tag "application" %>
+  <%= csrf_meta_tag %>
   <!-- <script src="js/html5-ie.js"></script> -->
 </head>
 
@@ -22,7 +23,7 @@
           <li class="cv"><a href="<%= Resource.first.url %>" title="Téléchargez le cv de Capucine Chastel">Téléchargez le cv de Capucine Chastel</a></li>
         </ul>
       </nav>
-      <h1>Diplômée d'un Master1 en psychopathologie de l'université Paris X</h1>
+      <h1>Diplômée d'un Master 1 en psychopathologie de l'université Paris X</h1>
     </header>
     
     <%= yield %>
@@ -32,7 +33,7 @@
   <footer>
     <div>
       <p class="marron">Copyright 2012 - PsyBoulogne © - Tous droits réservés</p>
-      <a href="#" title="Accès à l'interface de gestion">Accès à l'interface de gestion</a>
+      <a href="<%= url_for refinery_root_path %>" title="Accès à l'interface de gestion">Accès à l'interface de gestion</a>
     </div>
   </footer>
 </body>
