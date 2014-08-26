@@ -13,6 +13,7 @@ end
 group :production do
   gem 'pg'
   gem 'fog'
+  gem 'unicorn'
 end
 
 gem 'heroku'
