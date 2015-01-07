@@ -32,7 +32,7 @@ post '/contact' do
     Pony.mail to:      CONTACT_EMAIL,
               from:    params[:email],
               subject: 'Nouvelle demande de contact',
-              body:    slim(:email)
+              html_body: slim(:email)
     flash[:notice] = 'Nous avons bien pris votre demande en compte'
   end
 
