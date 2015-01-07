@@ -1,0 +1,155 @@
+doctype html
+head
+  meta charset="UTF-8" /
+  title Alexandra Monod psychologue à Boulogne Billancourt
+  meta content="Psy à boulogne : Alexandra Monod thérapeute, cabinet de psychologie-soutien psychologique" name="description" /
+  meta content="Boulogne Billancourt, Ile-de-france, France" name="geo.placename" /
+  meta content="Psy,psychologue,psychiatre,psychanalyse,coach,Paris,Boulogne,psychothérapeute,dépression" name="keywords" /
+  link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" /
+  link href="application.css" media="screen" rel="stylesheet" type="text/css" /
+body
+  section#page
+    header
+      figure
+        img alt="Logotype Alexandra Monod" src="logo.png" /
+      nav
+        ul
+          li.mail
+            a href="mailto:#{ CONTACT_EMAIL }" title="Contactez Alexandra Monod par email"  Contactez Alexandra Monod par email
+
+      h1
+        | Psychologue Diplômée Paris V Descartes
+    section#content
+      article
+        p Bienvenue sur le site internet de mon cabinet, le descriptif ci-dessous à pour but de vous informer sur la façon dont je travaille et conçois la psychothérapie. 
+        p
+          | Je propose des séances 
+          strong vivantes et dynamiques
+          |  afin de vous aider à surmonter vos problèmes actuels, passés ou de tout simplement de mieux vous connaitre.
+        p
+          strong style="background-color: transparent;"  POUR QUI ?
+          |  Enfants, adolescents, adultes et personnes âgées en séances individuelles, de couple ou familiales.
+        p
+          strong COMMENT ?
+          |  Lors des entretiens, j'aide mes patients à découvrir leurs potentialités de changement. Chacun est en mesure de
+          span.bold trouver ses propres solutions et de clarifier
+          |  ses réels objectifs grâce à la verbalisation! Nous travaillerons autour de moyens vous permettant d'aller vers un
+          strong  mieux être
+        p
+          strong A L'AIDE DE QUELLE MÉTHODE ?
+          |  La thérapie brève d'obédience analytique est une alternative à de nombreuses approches. Cette vision thérapeutique ne tient pas seulement compte des interactions du sujet avec son environnement mais également des relations qu’il entretient avec lui-même et sa propre histoire. 
+        p
+          strong COMBIEN DE TEMPS ?
+          |  Consulter un psychologue ne signifie pas forcément commencer une analyse qui durera des années. Mais simplement le temps de surmonter une étape de vie difficile. La psychothérapie brève se déroule en un nombre restreint de séances, qui peuvent toutefois s'étaler sur plusieurs mois.
+        p
+          strong A QUELLE FRÉQUENCE ?
+          |  Cette méthode permet d'aborder l'être dans sa totalité, dans un climat indispensable de confiance. Dès lors que l'alliance de travail est établie, les entretiens peuvent être aussi bien ponctuels que réguliers.
+        p
+          | Les séances durent en moyenne
+          strong 30 à 45 minutes. (60 euros/séance individuelle - 80/séance collective) 
+        p
+          | Les entretiens se passent dans un cadre agréable, professionnel et sécurisant.
+        p
+          strong> AVEC QUI ?
+          |  Une psychologue titulaire d'un double Master, qui
+          strong  partage ses idées
+          strong  échange et tient conseil. 
+        p Psychologue diplômée d'état, j'ai reçu une formation professionnelle initiale délivrant le diplôme de psychologue et je suis en formation permanente. Je m'engage à régénérer mes connaissances et à travailler mon développement personnel propre tout au long de l'exercice de ma profession, via la participation à des sessions de formations complémentaires, à des conférences ou à des colloques organisés par des psychologues, des psychanalystes et autres professionnels de la psychothérapie.
+        p Le numéro Adéli attestant mon titre de psychologue diplômée d'état est : 75 93 4471 6
+        p
+          | Le 
+          em
+            | thérapeute est neutre et bienveillant :
+            strong il ne juge pas
+            |  et dirige encore moins. 
+        p
+          em Le cabinet est ouvert le samedi afin de faciliter vos prises de rendez-vous.
+      aside
+        p.marron
+          img alt="Psychologie 2" height="302" rel="450x450" src="psychologie-2.jpg" title="Psychologie 2" width="450" /
+        p.marron
+          em
+            strong Voici une liste non exhaustive de thèmes qui peuvent être travaillés lors des séances :
+        ul
+          li Angoisses - Crises d'angoisse
+          li Nervosité - Stress
+          li Mal être
+          li Etats dépressifs
+          li Idées morbides
+          li Scarification
+          li Évènement traumatique
+          li Harcèlement
+          li Addictions
+          li Troubles alimentaires : anorexie, boulimie
+          li Phobies
+          li Troubles de l'humeur - Bipolarité
+          li Problèmes de couples
+          li Séparation
+          li Divorce
+          li Relations difficiles entre parents / beaux parents et enfants
+          li Echecs à répétition
+          li Difficultés avec son bébé
+          li Deuil
+          li Orientation scolaire et professionnelle 
+          li Bilan - Point
+        p.marron
+        p.marron
+        p.marron La passation de tests projectifs et psychométriques est possible pour faire un bilan psychologique ou appuyer le travail thérapeutique.
+        p
+          em
+            strong
+              | Une totale confidentialité vous est garantie dans le cadre du suivi thérapeutique.
+            | Je suis tenue par le secret professionnel et ne communique aucune information à un tiers sans l'accord ou la demande préalable de mes patients. Cette règle de confidentialité est essentielle pour l'établissement
+            strong
+              |  d'une relation de confiance à laquelle je tiens et sans laquelle il n'est possible d'avancer sereinement.
+    .clear
+    section#contact
+      section.infos
+        p style="TEXT-ALIGN: center"
+        .adresse
+          p
+            strong RENSEIGNEMENTS ET PRISE DE RENDEZ-VOUS 
+          p.marron Tel mobile professionnel : 06.69.73.13.04
+          p.marron
+          p
+            strong Adresse du cabinet  :
+          p
+            strong 84 rue du château - 92100 Boulogne-Billancourt
+          p
+            | Métro ligne 10, Arrêt Jean Jaures
+        .form
+          - if flash[:notice]
+            span.notification-green
+              = flash[:notice]
+          - if flash[:error]
+            span.notification-red
+              = flash[:error]
+
+          .clear
+          form accept-charset="UTF-8" action="/contact" method="post"
+            p.marron Vous pouvez me contacter par mail directement ici :
+            label Email*
+            div
+              input name="email" size="30" type="email"
+            label Message*
+            div
+              textarea cols="62" name="message" rows="10"
+            div
+              input name="commit" type="submit" value="Envoyer le message"
+      section.map
+        iframe frameborder="0" height="280" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=84+Rue+du+Ch%C3%A2teau,+Boulogne-Billancourt&amp;aq=3&amp;oq=+84+rue+du+ch%C3%A2teau+&amp;sll=46.75984,1.738281&amp;sspn=9.756415,17.841797&amp;ie=UTF8&amp;hq=&amp;hnear=84+Rue+du+Ch%C3%A2teau,+92100+Boulogne-Billancourt,+Hauts-de-Seine,+%C3%8Ele-de-France&amp;t=m&amp;ll=48.849072,2.24061&amp;spn=0.015815,0.034246&amp;z=14&amp;iwloc=A&amp;output=embed" width="400"
+  .clear
+  footer
+    div
+      p.marron Copyright #{ Time.now.year } - PsyBoulogne © - Tous droits réservés
+
+  javascript:
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29449529-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
