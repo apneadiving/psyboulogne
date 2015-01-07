@@ -19,7 +19,7 @@ Pony.options = {
 enable :sessions
 use Rack::Flash
 
-CONTACT_EMAIL = 'benjamin@rubyist.fr'
+CONTACT_EMAIL = 'monod.psychologue@gmail.com'
 
 get '/' do
   slim :home
